@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>box shadow interactive learning</title>
+  </head>
+  <body>
+    <header>
+      <h1>Understand box-shodow proprety values</h1>
+      <p>
+        { box-shadow:
+        <span>
+          h-offset v-offset blur spread color
+          <span id="green">inset</span></span
+        >}
+      </p>
+      <p>
+        inset is optional. Changes the shadow from an outer shadow (outset) to
+        an inner shadow
+      </p>
+    </header>
+    <main>
+      <section>
+        <div id="example"></div>
+        <form class="container">
+          <label for="h-offset">h-offset</label>
+          <input
+            name="h-offset"
+            type="number"
+            data-name="hOffset"
+            data-value="0"
+            value="0"
+          />
+          <label for="v-offset">v-offset</label>
+          <input
+            name="v-offset"
+            type="number"
+            data-name="vOffset"
+            data-value="0"
+            value="0"
+          />
+          <label for="blur">blur</label>
+          <input
+            name="blur"
+            type="number"
+            data-name="blur"
+            data-value="0"
+            value="0"
+          />
+          <label for="spread">spread</label>
+          <input
+            name="spread"
+            type="number"
+            value="0"
+            data-name="spread"
+            data-value="0"
+          />
+          <label for="color">color</label>
+          <input data-name="color" data-value="#ffcc66" value="#ffcc66" />
+          <input type="button" value="none" />
+          <input type="button" value=" add inset" id="inset" />
+          <input type="button" value=" remove inset" id="uninset" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <small>
+        <p>Copyright &copy June 2022 Nada T. All rights reserved</p>
+      </small>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
